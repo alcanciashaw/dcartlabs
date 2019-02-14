@@ -22,7 +22,7 @@ a:hover {
 
 body {
 	min-height: 100%;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	min-height: 100%;
 	overflow: scroll;
 	background-color: #FFE9C1;
@@ -39,7 +39,7 @@ body {
   grid-template-rows: 70% 30%;
   grid-template-areas: "a c e"
                        "b d e";
-  grid-gap: 25px;
+  grid-gap: 50px;
   width: 100vw;
   height: 100vh;
 }
@@ -48,8 +48,8 @@ body {
 .gtitle {
   grid-area: a;
   color: #000;
-  font-family: Fahkwang-Bold;
-  font-size: 3.2em;
+  font-family: "Fahkwang-Bold";
+  font-size: 4em;
   display: inline;
   writing-mode:vertical-rl; /* vertical text */
   justify-self: center;
@@ -59,8 +59,8 @@ body {
 .gnav {
   grid-area: b;
   color: #000;
-  font-family: Fahkwang-Bold;
-  font-size: 1em;
+  font-family: "Fahkwang-Bold";
+  font-size: 1.3em;
   display: inline;
   writing-mode:vertical-rl; /* vertical text */
   justify-self: center;
@@ -72,23 +72,26 @@ body {
 .gtext {
   grid-area: c;
   color: #000;
-  font-family: Rubik-Light;
-  font-size: 1em;
+  font-family: "Rubik-Light";
+  font-size: 1.5em;
   padding-top: 50px;
 }
 
 .gcategories {
   grid-area: d;
   color: #000;
-  font-family: Rubik-Light;
-  font-size: 1em;
+  font-family: "Rubik-Light";
+  font-size: 1.5em;
 }
 .gmap {
   grid-area: e;
   color: #000;
-  font-family: Rubik-Light;
-  font-size: 1em;
+  font-family: "Rubik-Light";
+  font-size: 1.3em;
   padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* text styles */
 
@@ -97,13 +100,17 @@ body {
   padding: 0;
 }
 
+.question {
+  font-family: "Fahkwang-Bold", sans-serif;
+  font-size: 1.7em;
+}
+
 .pad-right {
   padding-right: 0.2em;
 }
 
 .fahkwang {
   font-family: "Fahkwang-Bold", sans-serif;
-  text-decoration: underline #FF3600;
 
 }
 
@@ -113,16 +120,22 @@ body {
 
 /*lasvegashasfunaction*/
 a:link {
-	color: #5e5a7a;
-  text-decoration: none;
+	color: #000000;
+  text-decoration: underline wave #CC7114;
 }
 
 a:visited { 
-    color: #000;
+  color: #000000;
+  text-decoration: underline #CC7114;
 }
 
 a:hover {
     color: #CC7114;
+}
+
+a:active {
+  color: #FF3600;
+  text-decoration: underline #FF3600;
 }
 
 a:focus {
