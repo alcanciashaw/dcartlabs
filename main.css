@@ -66,7 +66,7 @@ body {
   grid-area: b;
   color: #000;
   font-family: "Fahkwang-Bold";
-  font-size: 2em;
+  font-size: 1.3em;
   display: inline;
   writing-mode:vertical-rl; /* vertical text */
   justify-self: center;
@@ -79,7 +79,7 @@ body {
   grid-area: c;
   color: #000;
   font-family: "Rubik-Light";
-  font-size: 2em;
+  font-size: 1.5em;
   padding-top: 50px;
 }
 
@@ -87,11 +87,13 @@ body {
   grid-area: d;
   color: #000;
   font-family: "Rubik-Light";
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .gmap {
   grid-area: e;
   color: #000;
+  font-family: "Rubik-Light";
+  font-size: 1.3em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +107,16 @@ body {
 
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 2.2em;
+  font-size: 1.7em;
+}
+
+.pad-right {
+  padding-right: 0.2em;
+}
+
+.fahkwang {
+  font-family: "Fahkwang-Bold", sans-serif;
+
 }
 
 .red {
