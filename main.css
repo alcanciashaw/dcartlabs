@@ -28,6 +28,12 @@ body {
 	background-color: #FFE9C1;
   margin: 0px;
 	font-family: "Rubik-Light", sans-serif;
+  position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
 
 }
 
@@ -88,7 +94,6 @@ body {
   color: #000;
   font-family: "Rubik-Light";
   font-size: 1.3em;
-  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
