@@ -40,11 +40,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 50% 20% 20% 10%;
-  grid-template-rows: 75% 30%;
-  grid-template-areas: "b c c a"
-                       "b d d a";
+  grid-template-columns: 50% 40% 5%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "b c a"
+                       "b d a";
   grid-column-gap: 50px;
+    width: 100vw;
+  height: 100vh;
 }
 
 
@@ -52,20 +54,20 @@ body {
   grid-area: a;
   writing-mode:vertical-lr; /* vertical text */
   padding-top: 50px;
-  width: 100vw;
-  height: 100vh;
 }
 
 .gtext {
   grid-area: c;
   color: #000;
   font-family: "Rubik-Light";
-  font-size: 1.5em;
   padding-top: 50px;
 }
 
 .gdesc{
   grid-area:d;
+  font-family: "Rubik-Light";
+  font-size: 1em;
+  padding-top: 50px;
 }
 
 .gmap {
@@ -105,16 +107,11 @@ body {
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+  }
 
 .verticals {
   font-family: "Fahkwang-Bold", sans-serif;
   font-size: 7em;
-}
-
-.fahkwang {
-  font-family: "Fahkwang-Bold", sans-serif;
-
 }
 
 .red {
@@ -125,6 +122,20 @@ body {
   color: #000;
   font-family: "Fahkwang-Bold";
   font-size: 4em;
+}
+
+.subtitle { 
+  color: #000;
+  font-family: "Fahkwang-Bold";
+  font-size: 2em;
+}
+
+.hometext {
+  font-size: 2em;
+}
+
+.padright {
+  padding-right: 2em;
 }
 
 /*lasvegashasfunaction*/
@@ -185,7 +196,7 @@ a:focus {
 }
 
 .smallbttn {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 /* animation */
