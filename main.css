@@ -6,13 +6,8 @@
 }
 
 @font-face {
-    font-family: Rubik-Bold;
-    src: url(type/Rubik-Bold.ttf);
-}
-
-@font-face {
-    font-family: Rubik-Light;
-    src: url(type/Rubik-Light.ttf);
+    font-family: Montserrat-Light;
+    src: url(type/Montserrat-Light.ttf);
 }
 
 a:hover {
@@ -26,7 +21,7 @@ body {
 	overflow: scroll;
 	background-color: #FFE9C1;
   margin: 0px;
-	font-family: "Rubik-Light", sans-serif;
+	font-family: "Montserrat-Light;", sans-serif;
   position: absolute;
     margin: 0px;
     overflow: hidden;
@@ -40,10 +35,11 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 50% 40% 5%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas: "b c a"
-                       "b d a";
+  grid-template-columns: 50% 20% 20% 5%;
+  grid-template-rows: 80% 10% 10%;
+  grid-template-areas: "b c d a"
+                       "b f g a"
+                       "b f e a";
   grid-column-gap: 50px;
     width: 100vw;
   height: 100vh;
@@ -54,31 +50,55 @@ body {
   grid-area: a;
   writing-mode:vertical-lr; /* vertical text */
   padding-top: 50px;
-}
-
-.gtext {
-  grid-area: c;
-  color: #000;
-  font-family: "Rubik-Light";
-  padding-top: 50px;
-}
-
-.gdesc{
-  grid-area:d;
-  font-family: "Rubik-Light";
-  font-size: 1em;
-  padding-top: 50px;
+  font-family: "Montserrat-Light";
+  font-size: 2em;
 }
 
 .gmap {
   grid-area: b;
   color: #000;
-  font-family: "Rubik-Light";
+  font-family: "Montserrat-Light";
   font-size: 1.3em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.gtext {
+  grid-area: c;
+  color: #000;
+  font-family: "Montserrat-Light";
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.gdesc {
+  grid-area:d;
+  font-family: "Montserrat-Light";
+  font-size: 1.5em;
+  padding-top: 50px;
+}
+
+.gg {
+  grid-area:g;
+  font-family: "Montserrat-Light";
+  font-size: 1.5em;
+  padding-top: 50px;
+}
+
+.gfooter {
+  grid-area e;
+  font-family: "Montserrat-Light";
+  font-size: 1.3em;
+}
+
+.gf {
+  grid-area:f;
+  font-family: "Montserrat-Light";
+  font-size: 1.5em;
+  padding-top: 50px;
+}
+
 
 #overlay {
   position: fixed; /* Sit on top of the page content */
@@ -103,10 +123,11 @@ body {
 
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 5.5em;
+  font-size: 6em;
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 95%;
   }
 
 .verticals {
@@ -127,15 +148,16 @@ body {
 .subtitle { 
   color: #000;
   font-family: "Fahkwang-Bold";
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .hometext {
   font-size: 2em;
 }
 
-.padright {
-  padding-right: 2em;
+.padt {
+  padding-right: 0.2em;
+  padding-left: 0.2em;
 }
 
 /*lasvegashasfunaction*/
@@ -176,7 +198,7 @@ a:focus {
   text-decoration: none;
   display: inline-block;
   font-size: 1.5em;
-  font-family: "Rubik-Bold", sans-serif;
+  font-family: "Fahkwang-Bold", sans-serif;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
@@ -192,7 +214,7 @@ a:focus {
 
 .button1:hover {
   background-color: #FF3600;
-  color: rgba(0,0,0,0);
+  color: #FFE9C1;
 }
 
 .smallbttn {

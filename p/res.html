@@ -11,9 +11,22 @@
 <body style="min-height: 100%;">
 </head>
 <body>
+
+        <div id="overlay" class="animated fadeInDown" onclick="off()">
+        <span class="verticals">
+            <a href="space.html">SPACE</a><br>
+            <a href="know.html">KNOWLEDGE</a><br>
+            <a href="tools.html">TOOLS</a><br>
+            <a href="res.html"><span class="red">RESOURCES</span><br>
+            <a href="time.html">TIME</a><br>
+        </span>
+    </div>
+
+
     <div class="container">
-        <div class="gtitle">D/CART LABS</div>
-        <div class="gnav"><a href="about.html">ABOUT</a> · <a href="../index.html">HOME</a></div>
+       <div class="container">
+        <div class="gtitle">            <a href="../index.html">D/CARTLABS</a>  ⋅  <a href="about.html">ABOUT</a>  ⋅ <a href="../index.html">HOME</a>
+</div>
         
         <div class="gtext">
             <div class="question">Resources</div>
@@ -22,18 +35,12 @@
 
 
         </div>
-        
-        <div class="gcategories"><br><br><br><br>
-
-            <div class="fahkwang">CATEGORIES</div>
-            <a href="space.html">SPACE</a> ·
-            <a href="know.html">KNOWLEDGE</a> ·
-            <a href="tools.html">TOOLS</a> ·
-            <a href="res.html"><span class="red">RESOURCES</span></a> ·
-            <a href="time.html">TIME</a>
 
 
+        <div class="gdesc">
+            blah blah
         </div>
+        
         <div class="gmap">
 
 
@@ -56,5 +63,19 @@
             </svg>
 
         </div>
+        <div class="gfooter">
+            <button class="button button1" onclick="on()">Explore →</button>
+        </div>
 </body>
+<script>
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+</script>
 </html>
