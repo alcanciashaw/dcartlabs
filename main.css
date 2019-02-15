@@ -36,12 +36,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 45% 23% 23% 2%;
-  grid-template-rows: 80% 10% 10%;
-  grid-template-areas: "b c d a"
-                       "b f g a"
-                       "b h e a";
-  grid-column-gap: 30px;
+  grid-template-columns: 44% 22% 22% 2%;
+  grid-template-rows: 100%;
+  grid-template-areas: "b c d a";
+  grid-column-gap: 40px;
     width: 100vw;
   height: 100vh;
 }
@@ -70,6 +68,7 @@ body {
   font-family: "Karla-Regular";
     padding-top: 70px;
     font-size: 1.5em;
+    overflow:scroll;
 }
 
 .gdesc {
@@ -77,6 +76,17 @@ body {
   font-family: "Karla-Regular";
   font-size: 1.5em;
   padding-top: 70px;
+  overflow:scroll;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #FFF1D7;
 }
 
 .gg {
@@ -106,7 +116,7 @@ body {
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 95%; /* Full width (cover the whole page) */
+  width: 93%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0; 
   left: 0;
