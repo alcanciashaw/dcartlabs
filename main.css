@@ -137,7 +137,7 @@ body {
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
   font-size: 4.5em;
-  line-height: 100%;
+  line-height: 110%;
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
