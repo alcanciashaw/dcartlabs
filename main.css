@@ -69,13 +69,13 @@ body {
   color: #000;
   font-family: "Montserrat-Light";
     padding-top: 50px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .gdesc {
   grid-area:d;
   font-family: "Montserrat-Light";
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 50px;
 }
 
@@ -106,7 +106,7 @@ body {
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
+  width: 97%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0; 
   left: 0;
@@ -127,10 +127,10 @@ body {
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
   font-size: 6em;
+  line-height: 95%;
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 95%;
   }
 
 .verticals {
