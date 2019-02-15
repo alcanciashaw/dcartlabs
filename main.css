@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: Montserrat-Light;
-    src: url(type/Montserrat-Light.ttf);
+    font-family: Karla-Regular;
+    src: url(type/Karla-Regular.ttf);
 }
 
 a:hover {
@@ -20,8 +20,9 @@ body {
 	font-size: 1.3em;
 	overflow: scroll;
 	background-color: #FFE9C1;
+  color: #994F03;
   margin: 0px;
-	font-family: "Montserrat-Light;", sans-serif;
+	font-family: "Karla-Regular;", sans-serif;
   position: absolute;
     margin: 0px;
     overflow: hidden;
@@ -35,12 +36,12 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 50% 20% 20% 5%;
+  grid-template-columns: 45% 23% 23% 2%;
   grid-template-rows: 80% 10% 10%;
   grid-template-areas: "b c d a"
                        "b f g a"
                        "b h e a";
-  grid-column-gap: 50px;
+  grid-column-gap: 30px;
     width: 100vw;
   height: 100vh;
 }
@@ -49,16 +50,16 @@ body {
 .gtitle {
   grid-area: a;
   writing-mode:vertical-lr; /* vertical text */
-  padding-top: 50px;
-  font-family: "Montserrat-Light";
+  padding-top: 70px;
+  font-family: "Karla-Regular";
   font-size: 2em;
 }
 
 .gmap {
   grid-area: b;
   color: #000;
-  font-family: "Montserrat-Light";
-  font-size: 1.3em;
+  font-family: "Karla-Regular";
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,35 +67,34 @@ body {
 
 .gtext {
   grid-area: c;
-  color: #000;
-  font-family: "Montserrat-Light";
-    padding-top: 50px;
-    font-size: 1.2em;
+  font-family: "Karla-Regular";
+    padding-top: 70px;
+    font-size: 1.5em;
 }
 
 .gdesc {
   grid-area:d;
-  font-family: "Montserrat-Light";
-  font-size: 1.2em;
-  padding-top: 50px;
+  font-family: "Karla-Regular";
+  font-size: 1.5em;
+  padding-top: 70px;
 }
 
 .gg {
   grid-area:g;
-  font-family: "Montserrat-Light";
+  font-family: "Karla-Regular";
   font-size: 1.5em;
   padding-top: 50px;
 }
 
 .ge {
   grid-area e;
-  font-family: "Montserrat-Light";
-  font-size: 1.3em;
+  font-family: "Karla-Regular";
+  font-size: 1.5em;
 }
 
 .gf {
   grid-area:f;
-  font-family: "Montserrat-Light";
+  font-family: "Karla-Regular";
   font-size: 1.5em;
   padding-top: 50px;
 }
@@ -106,7 +106,7 @@ body {
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 97%; /* Full width (cover the whole page) */
+  width: 95%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0; 
   left: 0;
@@ -126,8 +126,8 @@ body {
 
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 6em;
-  line-height: 95%;
+  font-size: 4.7em;
+  line-height: 110%;
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,7 +164,6 @@ body {
   color: #CC7114;
   border: 2px solid #CC7114;
   padding: 2% 4%;
-  text-align: center;
 
 }
 
@@ -179,13 +178,13 @@ body {
 
 /*lasvegashasfunaction*/
 a:link {
-	color: #000000;
+	color: #994F03;
   text-decoration: none;
   /*text-decoration: underline wave #CC7114;*/
 }
 
 a:visited { 
-  color: #000000;
+  color: #994F03;
   /*text-decoration: underline #CC7114;*/
 }
 
@@ -211,7 +210,6 @@ a:focus {
   border: none;
   color: white;
   padding: 2% 4%;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.5em;
