@@ -11,50 +11,50 @@
 <body style="min-height: 100%;">
 </head>
 <body>
+    <div id="overlay" class="animated fadeInDown" onclick="off()">
+            <span class="verticals">
+            <a href="p/space.html">SPACE</a><br>
+            <a href="p/know.html">KNOWLEDGE</a><br>
+            <a href="p/tools.html">TOOLS</a><br>
+            <a href="p/res.html">RESOURCES</a><br>
+            <a href="p/time.html">TIME</a><br>
+        </span>
+    </div>
+
     <div class="container">
-        <div class="gtitle">D/CART LABS</div>
-        <div class="gnav"><a href="p/about.html">ABOUT</a> · <a href="index.html">HOME</a></div>
+        <div class="gtitle">
+            <span class="title"><a href="index.html">D/CART LABS</a><a href="p/about.html">ABOUT</a></span>
+        </div>
         
         <div class="gtext">
-            <div class="question">What is shared /borrowed in program spaces (why, how)?</div>
 
-            <p>Things that have been shared / borrowed in the design and computation arts program spaces can be broken down into five categories: space, knowledge, tools, resources, and time.   Explore these borrowed items by selecting one from the list below.</p>
+            <p>Things that have been shared / borrowed in the design and computation arts program spaces can be broken down into five categories: space, knowledge, tools, resources, and time.  </p>
+            <p>Explore these borrowed items by selecting one from the list below.</p>
+            <button class="button button1" onclick="on()">Explore →</button>
 
 
         </div>
         
         <div class="gcategories">
-            <br><br><br><br>
-            <div class="fahkwang">CATEGORIES</div>
-            <a href="p/space.html">SPACE</a>·
-            <a href="p/know.html">KNOWLEDGE</a>·
-            <a href="p/tools.html">TOOLS</a>·
-            <a href="p/res.html">RESOURCES</a>·
-            <a href="p/time.html">TIME</a>
-
 
         </div>
         <div class="gmap">
 
 
-            <svg width="796px" height="925px" viewBox="0 0 796 925" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Home" transform="translate(-960.000000, -78.000000)" stroke="#FF3600">
-                    <g id="Floorplan" transform="translate(960.000000, 78.000000)">
-                    <path d="M1.5,1.52304965 L2.25,859" id="Line" stroke-width="2" stroke-linecap="square"></path>
-                    <path d="M794.25,403.682204 L794.25,923" id="Line" stroke-width="2" stroke-linecap="square">    </path>
-                    <path d="M256.25,1.51698113 L256.25,402" id="Line" stroke-width="2" stroke-linecap="square">    </path>
-                    <path d="M794.260261,923 L2.77856763,857.690698" id="Line" stroke-width="2" stroke-linecap="square"></path>
-                    <path d="M3.77792774,1.5 L256.261628,1.5" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
-                    <path d="M3.77792774,252.25 L256.126147,252.25" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
-                    <path d="M3.77903926,403.25 L794.259813,403.25" id="Line-2" stroke-width="2" stroke-linecap="square"></path>
-                    <rect id="Rectangle" stroke-width="3" x="254.5" y="182.5" width="5" height="68"></rect>
-                   <rect id="Rectangle" stroke-width="3" transform="translate(330.500000, 403.000000) rotate(90.000000) translate(-330.500000, -403.000000) " x="327.5" y="362.5" width="6" height="81"></rect>
-                      </g>
-                  </g>
-                </g>
-            </svg>
+            <div class="question">What is shared / borrowed in program spaces (why, how)?</div>
 
         </div>
 </body>
+
+<script>
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+</script>
 </html>

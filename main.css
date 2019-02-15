@@ -23,7 +23,6 @@ a:hover {
 body {
 	min-height: 100%;
 	font-size: 1.3em;
-	min-height: 100%;
 	overflow: scroll;
 	background-color: #FFE9C1;
   margin: 0px;
@@ -41,40 +40,21 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 7% 40% 53%;
+  grid-template-columns: 50% 20% 20% 10%;
   grid-template-rows: 75% 30%;
-  grid-template-areas: "a c e"
-                       "b d e";
+  grid-template-areas: "b c c a"
+                       "b d d a";
   grid-column-gap: 50px;
-  width: 100vw;
-  height: 100vh;
 }
 
 
 .gtitle {
   grid-area: a;
-  color: #000;
-  font-family: "Fahkwang-Bold";
-  font-size: 4em;
-  display: inline;
-  writing-mode:vertical-rl; /* vertical text */
-  justify-self: center;
+  writing-mode:vertical-lr; /* vertical text */
   padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
 }
-
-.gnav {
-  grid-area: b;
-  color: #000;
-  font-family: "Fahkwang-Bold";
-  font-size: 1.3em;
-  display: inline;
-  writing-mode:vertical-rl; /* vertical text */
-  justify-self: center;
-  align-content: end;
-
-}
-
-
 
 .gtext {
   grid-area: c;
@@ -84,17 +64,12 @@ body {
   padding-top: 50px;
 }
 
-.gcategories {
-  grid-area: d;
-  color: #000;
-  font-family: "Rubik-Light";
-  font-size: 1.5em;
-   align-content: end;
-
+.gdesc{
+  grid-area:d;
 }
 
 .gmap {
-  grid-area: e;
+  grid-area: b;
   color: #000;
   font-family: "Rubik-Light";
   font-size: 1.3em;
@@ -102,6 +77,21 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFE9C1;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 /* text styles */
 
 .p {
@@ -111,11 +101,15 @@ body {
 
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 1.7em;
+  font-size: 5.5em;
+  background: -webkit-linear-gradient(#FF3600, #CC7114);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.pad-right {
-  padding-right: 0.2em;
+.verticals {
+  font-family: "Fahkwang-Bold", sans-serif;
+  font-size: 7em;
 }
 
 .fahkwang {
@@ -124,22 +118,31 @@ body {
 }
 
 .red {
-  color: #FF3600;
+  color: #CC7114;
+}
+
+.title { 
+  color: #000;
+  font-family: "Fahkwang-Bold";
+  font-size: 4em;
 }
 
 /*lasvegashasfunaction*/
 a:link {
 	color: #000000;
-  text-decoration: underline wave #CC7114;
+  text-decoration: none;
+  /*text-decoration: underline wave #CC7114;*/
 }
 
 a:visited { 
   color: #000000;
-  text-decoration: underline #CC7114;
+  /*text-decoration: underline #CC7114;*/
 }
 
 a:hover {
-    color: #CC7114;
+    color: #FF3600;
+    text-decoration: underline #CC7114;
+
 }
 
 a:active {
@@ -151,7 +154,39 @@ a:focus {
     color: #958fc1;
 }
 
+/* button */
 
+.button {
+  color:#FF3600;
+  border: none;
+  color: white;
+  padding: 2% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: "Rubik-Bold", sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+    writing-mode:vertical-rl; /* vertical text */
+
+}
+
+.button1 {
+  background-color: rgba(0,0,0,0); 
+  color: #FF3600; 
+  border: 2px solid #FF3600;
+}
+
+.button1:hover {
+  background-color: #FF3600;
+  color: rgba(0,0,0,0);
+}
+
+.smallbttn {
+  font-size: 1em;
+}
 
 /* animation */
 
