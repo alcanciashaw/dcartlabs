@@ -16,7 +16,7 @@ a:hover {
 
 body {
 	min-height: 100%;
-	font-size: 1vw;
+	font-size: 2vw;
 	background-color: #FFE9C1;
   color: #994F03;
   margin: 0px;
@@ -27,103 +27,92 @@ body {
     top: 0px;
     bottom: 0px;
     width: 100%;
+    overflow: auto;
 
 }
 
 /* grid stuff */
 
 .container {
-  display: grid;
-  grid-template-columns: 44% 24% 24% 2%;
-  grid-template-rows: 100%;
-  grid-template-areas: "b c d a";
-  width: 100vw;
+  display: block;
+    width: 100vw;
   height: 100vh;
 }
 
 
 .gtitle {
-  grid-area: a;
-  writing-mode:vertical-lr; /* vertical text */
-  padding-top: 2vw;
-  padding-left: 5vw;
+  padding-top: 7vw;
+  padding-left: 7vw;
   font-family: "Karla-Regular";
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 .gmap {
-  grid-area: b;
   color: #000;
   font-family: "Karla-Regular";
   font-size: 1.5vw;
-  padding-left: 3.5vw;
+  padding-right: 2vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 
 .gmaptitle {
-  padding-top: 2.5vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  display: block;
 }
 
-.gmapholder {
-  width: 90vw;
-}
 
-svg {
-    width: 35vw;
-}
 .gtext {
-  grid-area: c;
   font-family: "Karla-Regular";
-    padding-top: 2vw;
-    font-size: 1.5vw;
+    font-size: 3.5vw;
     overflow:hidden;
-    padding-right: 2vw;
+    margin-left:7vw;
+    margin-right:7vw;
 }
 
 .gdesc {
-  grid-area:d;
   font-family: "Karla-Regular";
-  font-size: 1.5vw;
-  padding-top: 2vw;
+  font-size: 3.5vw;
   overflow:hidden;
-  padding-left: 2vw;
+  margin-left:7vw;
+  margin-right:7vw;
 }
 
 .gg {
-  grid-area:g;
   font-family: "Karla-Regular";
   font-size: 1.5em;
   padding-top: 50px;
 }
 
 .ge {
-  grid-area e;
   font-family: "Karla-Regular";
   font-size: 1.5em;
 }
 
 .gf {
-  grid-area:f;
   font-family: "Karla-Regular";
   font-size: 1.5em;
   padding-top: 50px;
 }
 
 .gh {
-  grid-area:h;
 }
 
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 93%; /* Full width (cover the whole page) */
+  width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
-  top: 0;
+  top: 12vw;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #FFE9C1;
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  padding-left: 5vw;
+  padding-top: 2vw;
 }
 
 /* text styles */
@@ -135,18 +124,18 @@ svg {
 
 .question {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 6.5vw;
-  padding-top: 5vw;
+  font-size: 7vw;
   line-height: 110%;
-  margin: 0 auto;
   background: -webkit-linear-gradient(#FF3600, #CC7114);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 7vw;
+  margin-bottom: 3vw;
   }
 
 .verticals {
   font-family: "Fahkwang-Bold", sans-serif;
-  font-size: 7em;
+  font-size: 6em;
 }
 
 .red {
@@ -162,30 +151,23 @@ svg {
 .subtitle {
   color: #000;
   font-family: "Fahkwang-Bold";
-  font-size: 1em;
+  font-size: 3vw;
 }
 
 .colophon {
-  padding-top: 2vw;
-  font-size: 1.2vw;
-  color: #994F03;
-}
-
-.colophontext {
-  font-family: "Karla-Regular";
-  font-size: 1.2vw;
-  padding-top: 2vw;
-  overflow:hidden;
-  padding-left: 2vw;
-  color: #994F03;
+  font-size: 3.5vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 }
 
 .pagetitle {
-  font-size: 3.3vw;
+  font-size: 6vw;
   font-family: "Fahkwang-Bold", sans-serif;
   color: red;
   text-decoration: underline;
   display: inline;
+  padding-right: 20vw;
+  padding-top: 8vw;
 }
 
 .hometext {
@@ -232,15 +214,18 @@ a:focus {
 .button {
   color:#FF3600;
   border: none;
-  padding: 4% 16%;
+  color: white;
+  padding: 2% 4%;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 4vw;
   font-family: "Fahkwang-Bold", sans-serif;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  text-align: center;
+  width: 400px;
+  margin-top: 2vw;
+  margin-bottom: 5vw;
 }
 
 .button1 {
@@ -254,17 +239,13 @@ a:focus {
 }
 
 .button2 {
-    background-color: #CC7114;
+  background-color: #FF3600;
   color: #FFE9C1;
 }
 
 .button2:hover {
-  background-color: #FF3600;
-}
-
-
-.smallbttn {
-  font-size: 0.5em;
+  background-color: #aa2500;
+  color: #FFE9C1;
 }
 
 /* animation */
